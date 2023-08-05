@@ -1,16 +1,12 @@
-import { getPets } from "@/sanity/utils"
+'use client'
+// import { getPets } from "@/sanity/utils"
 
 const page = async () => {  
-  const pets = await getPets();
+  // const pets = await getPets();
 
   return (
-    <div>
-      {pets.map((pet:any) => (
-        <div key={pet._id}>
-          <p>{pet._id}</p>
-          <p>{pet.name}</p>
-        </div>
-      ))}
+    <div className="font-bold flex h-screen items-center justify-center text-big text-Primary">
+      Fit2Go
     </div>
   )
 }
