@@ -1,2 +1,2 @@
-import pet from "./pet"
-export const schemaTypes = [pet]
+import gallery from "./gallery"
+export const schemaTypes = [gallery]
