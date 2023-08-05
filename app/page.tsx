@@ -1,9 +1,18 @@
-import React from 'react'
+import { getPets } from "@/sanity/utils"
 
-const App = () => {
+const page = async () => {  
+  const pets = await getPets();
+
   return (
-    <div>page</div>
+    <div>
+      {pets.map((pet:any) => (
+        <div key={pet._id}>
+          <p>{pet._id}</p>
+          <p>{pet.name}</p>
+        </div>
+      ))}
+    </div>
   )
 }
 
-export default App
+export default page
