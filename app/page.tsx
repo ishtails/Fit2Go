@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar"
 import Hero from "@/pages/Hero";
 import Objective from "@/pages/Objective";
 import Services from "@/pages/Services";
+import Testimonial from "@/pages/Testimonials";
 
 // import { getPets } from "@/sanity/utils"
 
@@ -19,16 +20,24 @@ const page = () => {
       <NavBar />
 
       {/* Hero */}
-      <Hero />
+      <section id="home">
+        <Hero />
+      </section>
 
       {/* Objective */}
-      <Objective />
+      <section id="objective">
+        <Objective />
+      </section>
 
       {/* Services */}
-      <Services />
+      <section id="services">
+        <Services />
+      </section>
 
       {/* Testimonials */}
-
+      <section id="testimonials">
+        <Testimonial />
+      </section>
 
       {/* Peak Performance */}
 
