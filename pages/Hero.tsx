@@ -22,7 +22,7 @@ const Hero = () => {
         src={hero_image}
         alt="logo"
         title="Hero Image"
-        className="sm:w-[50%] mt-5 sm:mt-0"
+        className="w-[45vh] sm:w-[50%] mt-5 sm:mt-0"
       />
     </div>
   );
