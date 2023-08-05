@@ -1,2 +1,3 @@
 import gallery from "./gallery"
-export const schemaTypes = [gallery]
+import testimonial from "./testimonial"
+export const schemaTypes = [gallery, testimonial]
