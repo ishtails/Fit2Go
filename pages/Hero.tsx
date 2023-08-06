@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div id="hero" className="h-full flex flex-col-reverse sm:flex-row sm:mt-14 items-center justify-between mx-10 xl:mx-auto max-w-6xl">
+    <div id="hero" className="flex flex-col-reverse items-center justify-between h-full max-w-6xl mx-10 sm:flex-row sm:mt-14 xl:mx-auto">
       <div className="sm:w-[40%] lg:w-[35%] space-y-4 mt-10 sm:mt-0">
-        <h1 className="font-lexend font-bold text-5xl xl:text-7xl">
+        <h1 className="text-5xl font-bold font-lexend xl:text-7xl">
           <p>Keep Your Body <span className="text-primary">Fit <span className="text-black">&</span> Strong</span></p>
 
         </h1>
-        <p className="text-body text-xl">
+        <p className="text-xl text-body">
           Quality and Holistic Health Services for Everyone
         </p>
-        <button className="flex items-center space-x-2 bg-primary rounded-full text-white py-2 px-4 transition-all hover:animate-pulse">
+        <button className="flex items-center px-4 py-2 space-x-2 text-white transition-all rounded-full bg-primary hover:animate-pulse">
           <p>Get in touch</p>
           <AiOutlineArrowRight />
         </button>
