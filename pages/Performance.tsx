@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Performance = () => {
     return (
-        <div id="hero" className="flex flex-col items-center justify-between h-full max-w-6xl mx-10 sm:space-x-16 sm:flex-row sm:mt-14 xl:mx-auto">
+        <div id="performance" className="flex flex-col items-center justify-between h-full max-w-6xl mx-10 sm:space-x-16 sm:flex-row sm:mt-14 xl:mx-auto">
             <div className="mt-10 sm:max-w-[70vw] sm:mt-0">
                 <h1 className="text-4xl font-bold font-lexend xl:text-6xl">
                     <p>Tap into Your Peak <br /><span className="text-primary">Performance</span></p>

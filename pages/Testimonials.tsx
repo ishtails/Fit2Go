@@ -2,7 +2,7 @@ import Testimonial from "@/components/Testimonial"
 
 const Testimonials = ({testimonials}:{testimonials:any}) => {
     return (
-        <div id="testimonial" className="flex flex-col items-center h-full mx-10 mt-24 xl:mx-auto">
+        <div id="testimonial" className="flex flex-col items-center h-full mx-10 mt-24 xl:mx-auto border-b-2 pb-4">
             <div className="flex flex-col items-center justify-center mb-10">
                 <h2 className="text-4xl font-bold text-center font-lexend lg:text-5xl xl:text-6xl">
                     Testimonials
