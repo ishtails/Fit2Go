@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="z-0 flex items-center justify-between max-w-6xl py-5 mx-10 xl:mx-auto ">
       <Image src={logo} alt="logo" width={100} className="" />
 
-      <div className="items-center hidden space-x-4 font-medium sm:flex lg:space-x-14 text-slate-600">
+      <div className="items-center hidden space-x-8 font-medium sm:flex lg:space-x-14 text-slate-600">
         <Link
           to="objectives"
           spy={true}

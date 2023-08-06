@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <div className="flex flex-col-reverse items-center pt-8 pb-4 mt-24 sm:flex-row justify-evenly bg-Slate-darker">
+        <div className="flex flex-col-reverse items-center pt-8 pb-6 mt-24 sm:flex-row justify-evenly bg-Slate-darker">
             <p className="sm:hidden mt-5 text-sm text-center text-zinc-400">
                 Copyright © <span className="text-primary">Fit2Go 2023</span>
             </p>
