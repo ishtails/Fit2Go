@@ -12,7 +12,7 @@ type Props = {
 
 const Testimonial = ({ author, designation, description, imageURL }: Props) => {
     return (
-        <div id="testimonial" className="bg-pale-green/20 py-10 sm:px-10 flex flex-col sm:flex-row justify-between sm:divide-x-2 space-x-2 items-center max-w-[640px] flex-shrink-0 snap-center rounded-xl divide-y-2 sm:divide-y-0">
+        <div className="bg-pale-green/20 py-10 sm:px-10 flex flex-col sm:flex-row justify-between sm:divide-x-2 space-x-2 items-center max-w-[640px] flex-shrink-0 snap-center rounded-xl divide-y-2 sm:divide-y-0">
             <div className="relative pb-5 sm:pb-0 sm:pr-5">
                 <Image src={imageURL} width={120} height={120} alt="Testimonial Image" className="object-cover rounded-full aspect-square" />
                 <Image src={test_quote} width={40} alt="Testimonial Image" className="absolute p-3 rounded-full bg-primary -top-2 aspect-square" />

@@ -8,7 +8,7 @@ type Props = {
 
 const Service = ({ title, description, image }: Props) => {
     return (
-        <div className="flex flex-col justify-center p-8 border rounded-lg shadow-lg">
+        <div className="flex flex-col justify-center p-8 border rounded-lg shadow-lg hover:bg-pale-green/20 transition-all">
             <Image className="w-fit" src={image} alt="Sunset in the mountains" />
             <div className="mt-5 text-lg font-bold sm:text-xl">{title}</div>
             <p className="mt-1 text-body">{description}</p>
