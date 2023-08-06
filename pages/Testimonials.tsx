@@ -57,7 +57,7 @@ const Testimonials = () => {
             <div className="hidden md:flex space-x-8">
                 <button onClick={() => {
                     if (testimonialsRef.current) {
-                        testimonialsRef.current.scrollLeft += 640;
+                        testimonialsRef.current.scrollLeft -= 640;
                     }
                 }} >
                     <LiaAngleLeftSolid className="hover:text-primary transition-all" />
