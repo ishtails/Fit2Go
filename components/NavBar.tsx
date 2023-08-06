@@ -21,7 +21,7 @@ const NavBar = () => {
           to="services"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-50}
           duration={700}
         >
           <p className="transition cursor-pointer hover:text-primary">Services</p>
