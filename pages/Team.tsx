@@ -11,7 +11,7 @@ const Team = () => {
                 Meet the team that makes it all possible
             </span>
             <div className="grid grid-cols-1 gap-14 mt-8 sm:grid-cols-2 lg:grid-cols-4">
-                <TeamCard name="Anush Shukla" profession="Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
+                <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
                 <TeamCard name="Anush Shukla" profession="Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
                 <TeamCard name="Anush Shukla" profession="Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
                 <TeamCard name="Anush Shukla" profession="Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />

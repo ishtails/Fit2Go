@@ -13,8 +13,8 @@ const Hero = () => {
         <p className="text-xl text-body">
           Quality and Holistic Health Services for Everyone
         </p>
-        <button className="flex items-center px-4 py-2 space-x-2 text-white transition-all rounded-full bg-primary hover:animate-pulse">
-          <p>Get in touch</p>
+        <button className="flex items-center px-4 py-2 space-x-2 text-white transition-all rounded-full bg-primary hover:bg-[#10a58f]">
+          <p className="font-medium">Get in touch</p>
           <AiOutlineArrowRight />
         </button>
       </div>
