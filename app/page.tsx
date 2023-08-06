@@ -8,7 +8,6 @@ import Services from "@/pages/Services";
 import Team from "@/pages/Team";
 import Testimonials from "@/pages/Testimonials";
 import WhyUs from "@/pages/WhyUs";
-import { testimonials } from "@/sanity/constants"
 
 const page = async () => {
   return (
@@ -34,7 +33,7 @@ const page = async () => {
 
       {/* Testimonials */}
       <section id="testimonials">
-        <Testimonials testimonials={testimonials} />
+        <Testimonials />
       </section>
 
       {/* Performance */}
