@@ -1,26 +1,23 @@
-'use client'
-
 import NavBar from "@/components/NavBar"
 import Hero from "@/pages/Hero";
 import Objective from "@/pages/Objective";
+import Performance from "@/pages/Performance";
 import Services from "@/pages/Services";
-import Testimonial from "@/pages/Testimonials";
+import Testimonials from "@/pages/Testimonials";
+import WhyUs from "@/pages/WhyUs";
+import { getTestimonials } from "@/sanity/utils";
 
-// import { getPets } from "@/sanity/utils"
+const page = async () => {
+  const testimonials = await getTestimonials();
 
-const getPets: any = async () => {
-  const pets = await getPets();
-  return pets;
-}
-
-const page = () => {
   return (
-    <div className="bg-white overflow-x-hidden">
+    <div className="overflow-x-clip">
       {/* Navbar */}
       <NavBar />
 
       {/* Hero */}
-      <section id="home">
+      <section id="home" className="relative">
+        <div className="absolute blur-[600px] bg-[#54BE96]/30 p-96 -z-10 -right-72 -top-56" />
         <Hero />
       </section>
 
@@ -36,17 +33,21 @@ const page = () => {
 
       {/* Testimonials */}
       <section id="testimonials">
-        <Testimonial />
+        <Testimonials testimonials={testimonials}/>
       </section>
 
-      {/* Peak Performance */}
-
+      {/* Performance */}
+      <section id="performance">
+        <Performance />
+      </section>
 
       {/* Why Us */}
-
+      <section id="whyus" className="relative">
+        <div className="absolute blur-[1000px] bg-[#54BE96]/40 p-96 -z-10 -left-72 -top-56" />
+        <WhyUs />
+      </section>
 
       {/* Gallery */}
-
 
       {/* Team */}
 
