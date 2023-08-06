@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Objective = () => {
     return (
-        <div id="objectives" className="h-full grid grid-cols-1 sm:grid-cols-2 mx-10 xl:mx-auto max-w-6xl mt-24 md:bg-pale-green/10 rounded-lg sm:gap-10 items-center">
+        <div id="objectives" className="grid items-center h-full max-w-6xl grid-cols-1 mx-10 mt-24 rounded-lg sm:grid-cols-2 xl:mx-auto md:bg-pale-green/10 sm:gap-10">
             <Image
                 src={whatwedo_image}
                 alt="logo"
@@ -12,7 +12,7 @@ const Objective = () => {
                 className=""
             />
             <div className="lg:w-[80%] space-y-4 mt-10 sm:mt-0 pr-2">
-                <h2 className="font-lexend font-bold text-4xl lg:text-5xl xl:text-6xl">
+                <h2 className="text-4xl font-bold font-lexend lg:text-5xl xl:text-6xl">
                     What we do...
                 </h2>
                 <p className="text-body xl:text-lg">
