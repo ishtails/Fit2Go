@@ -3,7 +3,7 @@ import Card from "@/components/Card"
 const WhyUs = () => {
     return (
         <div id="services" className="h-full max-w-6xl mx-10 mt-24 xl:mx-auto">
-            <h2 className="text-5xl text-end font-bold font-lexend lg:text-6xl xl:text-7xl">
+            <h2 className="text-5xl text-end font-bold font-lexend xl:text-6xl">
                 Why us?
             </h2>
             <div className="grid grid-cols-1 gap-5 mt-8 lg:grid-cols-3 lg:sm:grid-cols-3">

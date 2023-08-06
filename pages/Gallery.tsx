@@ -38,7 +38,7 @@ const Gallery = ({ }: Props) => {
   return (
     <div id="testimonial" className="flex flex-col items-center h-full mx-auto mt-24">
       <div className="flex flex-col items-center justify-center -mb-12 sm:-mb-0 lg:-mb-8">
-        <h2 className="text-4xl font-bold text-center font-lexend lg:text-5xl xl:text-6xl">
+        <h2 className="text-5xl font-bold text-center font-lexend xl:text-6xl">
           Picture Gallery
         </h2>
         <span className="justify-center mt-1 text-sm text-body lg:text-md xl:text-lg">
