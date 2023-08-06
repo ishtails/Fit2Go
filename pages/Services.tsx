@@ -8,11 +8,11 @@ import services_6 from "../assets/services_6.svg"
 
 const Services = () => {
     return (
-        <div id="services" className="h-full mx-10 xl:mx-auto max-w-6xl mt-24">
-            <h2 className="font-lexend font-bold text-4xl lg:text-5xl xl:text-6xl">
+        <div id="services" className="h-full max-w-6xl mx-10 mt-24 xl:mx-auto">
+            <h2 className="text-4xl font-bold font-lexend lg:text-5xl xl:text-6xl">
                 Our Services
             </h2>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:sm:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 lg:sm:grid-cols-3">
                 <Service title="Physiotherapy & Rehabilitation" description="Buy  your medicines with our mobile application with a simple delivery system" image={services_1} />
                 <Service title="Strength & Conditioning" description="Buy  your medicines with our mobile application with a simple delivery system" image={services_2} />
                 <Service title="Nutrition" description="Free consultation with our trusted doctors and get the best recomendations" image={services_3} />
