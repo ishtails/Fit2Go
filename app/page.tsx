@@ -4,6 +4,7 @@ import Hero from "@/pages/Hero";
 import Objective from "@/pages/Objective";
 import Performance from "@/pages/Performance";
 import Services from "@/pages/Services";
+import Team from "@/pages/Team";
 import Testimonials from "@/pages/Testimonials";
 import WhyUs from "@/pages/WhyUs";
 import { testimonials } from "@/sanity/constants"
@@ -47,12 +48,14 @@ const page = async () => {
       </section>
 
       {/* Gallery */}
-      <section id="testimonials">
+      <section id="gallery">
         <Gallery />
       </section>
 
       {/* Team */}
-
+      <section id="team">
+        <Team />
+      </section>
 
       {/* Footer */}
     </div>
