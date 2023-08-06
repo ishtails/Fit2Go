@@ -1,22 +1,26 @@
 import React from 'react'
 import Image from "next/image"
 import test_quote from "../assets/test_quote.svg"
-import test_image from "../assets/test_image.jpg"
 
-type Props = {}
+type Props = {
+    key: string,
+    author: string,
+    designation: string,
+    description: string,
+    imageURL: string
+}
 
-const Testimonial = ({ }: Props) => {
+const Testimonial = ({ author, designation, description, imageURL }: Props) => {
     return (
-        <div className="bg-pale-green/20 p-10 flex justify-between divide-x-2 space-x-2 items-center max-w-[720px] mt-8">
-            <div className="relative pr-5">
-                <Image src={test_image} width={120} height={120} alt="Testimonial Image" className="rounded-full" />
-                <Image src={test_quote} width={40} height={40} alt="Testimonial Image" className="bg-primary p-3 absolute -top-2 rounded-full aspect-square" />
+        <div id="testimonial" className="bg-pale-green/20 py-10 sm:px-10 flex flex-col sm:flex-row justify-between sm:divide-x-2 space-x-2 items-center max-w-[640px] flex-shrink-0 snap-center rounded-xl divide-y-2 sm:divide-y-0">
+            <div className="relative pb-5 sm:pb-0 sm:pr-5">
+                <img src={imageURL} width={120} alt="Testimonial Image" className="object-cover rounded-full aspect-square" />
+                <Image src={test_quote} width={40} alt="Testimonial Image" className="absolute p-3 rounded-full bg-primary -top-2 aspect-square" />
             </div>
-            <div className="pl-5 w-[75%]">
-                <h3 className="text-lg font-semibold">Ishani Sharma</h3>
-                <p className="">School Teacher</p>
-                <p className="text-sm text-zinc-700">I had been dealing with chronic back pain for years, and it was affecting my daily life. When I came across Fit2Go, I decided to give it a try. Their team of experts not only relieved my pain but also taught me exercises to prevent future issues. I can't thank them enough for giving me a new lease on life.
-                </p>
+            <div className="sm:pl-10 w-[75%] pt-5 sm:pt-0">
+                <h3 className="text-xl font-semibold">{author}</h3>
+                <p className="text-sm">{designation}</p>
+                <p className="mt-2 text-sm text-zinc-700">{description}</p>
             </div>
         </div>
     )
