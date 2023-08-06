@@ -9,7 +9,7 @@ import services_6 from "../assets/services_6.svg"
 const Services = () => {
     return (
         <div id="services" className="h-full max-w-6xl mx-10 mt-24 xl:mx-auto">
-            <h2 className="text-5xl font-bold font-lexend xl:text-6xl">
+            <h2 className="text-4xl sm:text-5xl font-bold font-lexend xl:text-6xl">
                 Our Services
             </h2>
             <span className="justify-center ml-1 text-sm text-body lg:text-md xl:text-lg">

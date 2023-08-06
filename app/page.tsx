@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar"
+import Footer from "@/pages/Footer";
 import Gallery from "@/pages/Gallery";
 import Hero from "@/pages/Hero";
 import Objective from "@/pages/Objective";
@@ -33,7 +34,7 @@ const page = async () => {
 
       {/* Testimonials */}
       <section id="testimonials">
-        <Testimonials testimonials={testimonials}/>
+        <Testimonials testimonials={testimonials} />
       </section>
 
       {/* Performance */}
@@ -53,11 +54,15 @@ const page = async () => {
       </section>
 
       {/* Team */}
-      <section id="team">
+      <section id="team" className="relative">
+        <div className="absolute blur-[400px] bg-[#54BE96]/30 p-96 -z-10 -right-44 -bottom-56" />
         <Team />
       </section>
 
       {/* Footer */}
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   )
 }

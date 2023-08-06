@@ -12,8 +12,8 @@ type Props = {
 
 const TeamCard = ({ name, profession, image, linkedin, instagram }: Props) => {
     return (
-        <div className="flex flex-col items-center rounded-lg shadow-lg">
-            <Image className="rounded-t-lg w-fit" src={image} alt="anush shukla" />
+        <div className="bg-white flex flex-col items-center rounded-lg shadow-lg">
+            <Image className="rounded-t-lg w-fit" src={image} alt={name} />
             <h3 className="mt-5 text-lg font-bold sm:text-xl">{name}</h3>
             <p className="mb-4 text-body">{profession}</p>
             <div className="flex justify-center -mt-2 mb-3 space-x-4">
