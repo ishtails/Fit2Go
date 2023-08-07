@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react"
 import { PiHandSwipeLeftLight } from 'react-icons/pi'
 import NavigationArrows from "@/components/NavigationArrows"
 import { urlFor } from "@/helpers/helpers"
+import { getPictures } from "@/sanity/utils"
 
 type Props = {
   array: {
@@ -13,6 +14,16 @@ type Props = {
     alt: string,
     image: any,
   }[],
+}
+
+export const getStaticProps = async () => {
+  const pictureArray = await getPictures();
+
+  return {
+    props: {
+      array: pictureArray,
+    },
+  };
 }
 
 const Gallery = ({ array }: Props) => {

@@ -3,6 +3,7 @@ import Testimonial from "@/components/Testimonial"
 import React, { useRef } from "react";
 import NavigationArrows from "@/components/NavigationArrows";
 import { urlFor } from "@/helpers/helpers";
+import { getTestimonials } from "@/sanity/utils";
 
 type Props = {
     array: {
@@ -13,6 +14,16 @@ type Props = {
         image: any,
     }[],
 }
+
+export const getStaticProps = async () => {
+  const testimonials = await getTestimonials();
+  
+    return {
+      props: {
+        array: testimonials,
+      },
+    };
+  }
 
 const Testimonials = ({ array }: Props) => {
     const testimonialsRef = useRef<HTMLDivElement>(null);

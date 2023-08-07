@@ -4,6 +4,7 @@ import team_1 from "@/assets/Anush.jpeg"
 import React, { useRef } from "react";
 import NavigationArrows from "@/components/NavigationArrows";
 import { urlFor } from "@/helpers/helpers";
+import { getTeamMembers } from "@/sanity/utils";
 
 type Props = {
     array: {
@@ -15,6 +16,16 @@ type Props = {
         instagram?: string
     }[],
 }
+
+export const getStaticProps = async () => {
+    const team = await getTeamMembers();
+    
+      return {
+        props: {
+          array: team,
+        },
+      };
+    }
 
 const Team = ({ array }: Props) => {
     const teamRef = useRef<HTMLDivElement>(null);
