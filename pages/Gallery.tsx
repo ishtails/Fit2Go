@@ -1,15 +1,17 @@
 'use client'
 import Image from 'next/image'
-import gallery_image from '@/assets/gallery_image.png'
 import { DeviceFrameset } from 'react-device-frameset'
 import 'react-device-frameset/styles/marvel-devices.min.css'
 import { useEffect, useRef, useState } from "react"
 import { PiHandSwipeLeftLight } from 'react-icons/pi'
 import NavigationArrows from "@/components/NavigationArrows"
+import { urlFor } from "@/helpers/helpers"
 
-type Props = {}
+type Props = {
+  array: Array<any>,
+}
 
-const Gallery = ({ }: Props) => {
+const Gallery = ({ array }: Props) => {
   const [device, setDevice] = useState<deviceType>("iPhone 8");
   const [landscape, setLandscape] = useState(true);
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -51,13 +53,17 @@ const Gallery = ({ }: Props) => {
       </div>
 
       <DeviceFrameset device={device} color="black" landscape={landscape} zoom={0.8}>
-        <div ref={galleryRef} className="flex flex-col max-h-screen mb-5 overflow-x-scroll md:flex-row scrollbar-hide scroll-smooth snap-x snap-mandatory">
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
+        <div ref={galleryRef} className="flex flex-col h-[670px] sm:h-fit overflow-x-scroll md:flex-row scrollbar-hide scroll-smooth snap-x snap-mandatory">
+          {array.map((item) => (
+            <Image
+              key={item._id}
+              src={urlFor(item.image).width(600).height(600).url()}
+              width={600}
+              height={600}
+              alt={item.alt}
+              className="flex-shrink-0 border-8 object-cover border-Slate-darker snap-center" />
+          ))}
+
         </div>
       </DeviceFrameset>
 
