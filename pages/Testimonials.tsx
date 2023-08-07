@@ -1,49 +1,20 @@
 'use client'
 import Testimonial from "@/components/Testimonial"
-import { LiaAngleRightSolid, LiaAngleLeftSolid } from "react-icons/lia"
 import React, { useRef } from "react";
-import test_image from "@/assets/Anush.jpeg";
 import NavigationArrows from "@/components/NavigationArrows";
+import { urlFor } from "@/helpers/helpers";
 
-const testimonials = [
-    {
-        designation: 'Student',
-        description: "The team of experts at Fit2Go not only relieved my pain but also taught me exercises to prevent future issues.",
-        imageURL: test_image,
-        _id: '03e34a1d-4f89-4838-9a45-1990ba01ca24',
-        author: 'Shrey'
-    },
-    {
-        _id: '9b3d12ae-cb3f-4fc5-9dfa-0e5db58b0d26',
-        author: 'Arjun',
-        designation: 'Student',
-        description: 'These guys helped me in getting into shape and now I can enjoy playing my favorite game just like when I was young.',
-        imageURL: test_image
-    },
-    {
-        author: 'Kartikay',
-        designation: 'Student',
-        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
-        imageURL: test_image,
-        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85b'
-    },
-    {
-        author: 'Vyshnav',
-        designation: 'Student',
-        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
-        imageURL: test_image,
-        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85bc'
-    },
-    {
-        author: 'Sachin',
-        designation: 'Student',
-        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
-        imageURL: test_image,
-        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85bd'
-    },
-]
+type Props = {
+    array: {
+        _id: string,
+        author: string,
+        designation: string,
+        description: string,
+        image: any,
+    }[],
+}
 
-const Testimonials = () => {
+const Testimonials = ({ array }: Props) => {
     const testimonialsRef = useRef<HTMLDivElement>(null);
 
     return (
@@ -58,13 +29,13 @@ const Testimonials = () => {
             </div>
 
             <div ref={testimonialsRef} className="max-w-[95vw] max-h-[75vh] flex overflow-x-scroll space-x-10 scrollbar-hide mb-5 scroll-smooth px-24 snap-x snap-mandatory">
-                {testimonials.map((testimonial: any) => (
+                {array.map((testimonial: any) => (
                     <Testimonial
                         key={testimonial._id}
                         author={testimonial.author}
                         designation={testimonial.designation}
                         description={testimonial.description}
-                        imageURL={testimonial.imageURL}
+                        imageURL={urlFor(testimonial.image).width(500).height(500).url()}
                     />
                 ))}
             </div>
