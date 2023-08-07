@@ -4,27 +4,17 @@ export default {
   title: "Picture Gallery",
   fields: [
     {
-      name: "title",
-      type: "string",
-      title: "Title",
-    },
-    {
-      name: "description",
-      type: "string",
-      title: "Description",
-    },
-    {
-      name: "alt",
-      type: "string",
-      title: "Alternate Text",
-    },
-    {
       name: "image",
       type: "image",
       title: "Image",
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "alt",
+      type: "string",
+      title: "Alt Text",
     },
   ],
 };
