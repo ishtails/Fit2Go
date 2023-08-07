@@ -18,3 +18,9 @@ export async function getPictures() {
     groq`*[_type == "gallery"]{_id, image, alt}`
   );
 }
+
+export async function getTeamMembers() {
+  return client.fetch(
+    groq`*[_type == "team"] | order(index asc) {_id, name, designation, image, instagram, linkedin}`
+  );
+}
