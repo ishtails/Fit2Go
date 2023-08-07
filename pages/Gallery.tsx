@@ -55,7 +55,9 @@ const Gallery = ({}: Props) => {
           <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
           <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
           <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
-          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" /> 
+          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
+          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
+          <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
         </div>
       </DeviceFrameset>
       <div className="space-x-10 hidden md:flex md:-mt-0 lg:-mt-8">

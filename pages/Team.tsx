@@ -19,6 +19,8 @@ const Team = () => {
                 <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
                 <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
                 <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
+                <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
+                <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
             </div>
 
             <div className="self-center space-x-10 mt-5 flex">

@@ -25,7 +25,21 @@ const testimonials = [
         description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
         imageURL: test_image,
         _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85b'
-    }
+    },
+    {
+        author: 'Vyshnav',
+        designation: 'Student',
+        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
+        imageURL: test_image,
+        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85bc'
+    },
+    {
+        author: 'Sachin',
+        designation: 'Student',
+        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
+        imageURL: test_image,
+        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85bd'
+    },
 ]
 
 const Testimonials = () => {
