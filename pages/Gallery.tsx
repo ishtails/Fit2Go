@@ -8,7 +8,11 @@ import NavigationArrows from "@/components/NavigationArrows"
 import { urlFor } from "@/helpers/helpers"
 
 type Props = {
-  array: Array<any>,
+  array: {
+    _id: string,
+    alt: string,
+    image: any,
+  }[],
 }
 
 const Gallery = ({ array }: Props) => {
@@ -53,11 +57,11 @@ const Gallery = ({ array }: Props) => {
       </div>
 
       <DeviceFrameset device={device} color="black" landscape={landscape} zoom={0.8}>
-        <div ref={galleryRef} className="flex flex-col h-[670px] sm:h-fit overflow-x-scroll md:flex-row scrollbar-hide scroll-smooth snap-x snap-mandatory">
+        <div ref={galleryRef} className="flex flex-col h-[670px] md:h-fit overflow-x-scroll md:flex-row scrollbar-hide scroll-smooth snap-x snap-mandatory">
           {array.map((item) => (
             <Image
               key={item._id}
-              src={urlFor(item.image).width(600).height(600).url()}
+              src={urlFor(item.image).width(1000).height(1000).url()}
               width={600}
               height={600}
               alt={item.alt}
