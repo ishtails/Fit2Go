@@ -9,10 +9,12 @@ import Services from "@/pages/Services";
 import Team from "@/pages/Team";
 import Testimonials from "@/pages/Testimonials";
 import WhyUs from "@/pages/WhyUs";
-import { getPictures } from "@/sanity/utils";
+import { getPictures, getTeamMembers, getTestimonials } from "@/sanity/utils";
 
 const page = async () => {
   const pictureArray = await getPictures();
+  const testimonials = await getTestimonials();
+  const team = await getTeamMembers();
   
   return (
     <div className="overflow-x-clip">
@@ -37,7 +39,7 @@ const page = async () => {
 
       {/* Testimonials */}
       <section id="testimonials" className="">
-        <Testimonials />
+        <Testimonials array={testimonials}/>
       </section>
 
       {/* Performance */}
@@ -59,7 +61,7 @@ const page = async () => {
       {/* Team */}
       <section id="team" className="relative ">
         <div className="absolute blur-[400px] bg-[#54BE96]/30 p-96 -z-10 -right-44 -bottom-56" />
-        <Team />
+        <Team array={team}/>
       </section>
 
       {/* Footer */}
