@@ -60,15 +60,15 @@ const Gallery = ({}: Props) => {
           <Image src={gallery_image} alt="picture" className="flex-shrink-0 object-cover w-[150%] border-8 border-Slate-darker snap-center" />
         </div>
       </DeviceFrameset>
-      <div className="space-x-10 hidden md:flex md:-mt-0 lg:-mt-8">
-                <button onClick={() => {
+      <div className="space-x-10 hidden md:flex md:-mt-0 lg:-mt-10">
+                <button className="bg-primary p-2 rounded-full shadow-md hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft -= 500;
                     }
                 }} >
                     <LiaAngleLeftSolid className="transition-all hover:text-primary" />
                 </button>
-                <button onClick={() => {
+                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft += 500;
                     }

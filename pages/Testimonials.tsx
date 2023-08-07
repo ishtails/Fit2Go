@@ -69,14 +69,14 @@ const Testimonials = () => {
             </div>
 
             <div className="space-x-10 mt-5 md:flex">
-                <button onClick={() => {
+                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft -= 400;
                     }
                 }} >
                     <LiaAngleLeftSolid className="transition-all hover:text-primary" />
                 </button>
-                <button onClick={() => {
+                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft += 400;
                     }

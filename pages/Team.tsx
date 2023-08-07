@@ -23,15 +23,15 @@ const Team = () => {
                 <TeamCard name="Anush Shukla" profession="Founder / Physiotherapist" image={team_1} linkedin="https://www.linkedin.com/in/anush-shukla-688729206/" instagram="https://www.instagram.com/tikks02/" />
             </div>
 
-            <div className="self-center space-x-10 mt-5 flex">
-                <button onClick={() => {
+            <div className="self-center space-x-10 flex">
+                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft -= 200;
                     }
                 }} >
-                    <LiaAngleLeftSolid className="transition-all hover:text-primary" />
+                    <LiaAngleLeftSolid className="transition-all  hover:text-primary" />
                 </button>
-                <button onClick={() => {
+                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
                     if (testimonialsRef.current) {
                         testimonialsRef.current.scrollLeft += 200;
                     }
