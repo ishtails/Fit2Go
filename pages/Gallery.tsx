@@ -9,7 +9,7 @@ import NavigationArrows from "@/components/NavigationArrows"
 
 type Props = {}
 
-const Gallery = ({}: Props) => {
+const Gallery = ({ }: Props) => {
   const [device, setDevice] = useState<deviceType>("iPhone 8");
   const [landscape, setLandscape] = useState(true);
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -61,7 +61,9 @@ const Gallery = ({}: Props) => {
         </div>
       </DeviceFrameset>
 
-      <NavigationArrows scrollRef={galleryRef} scrollBy={500}/>
+      <div className="hidden md:block lg:-mt-8">
+        <NavigationArrows scrollRef={galleryRef} scrollBy={500} />
+      </div>
     </div >
   )
 }
