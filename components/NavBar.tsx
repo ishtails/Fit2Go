@@ -25,11 +25,11 @@ const NavBar = () => {
           spy={true}
           smooth={true}
           offset={-50}
-          duration={700}
+          duration={1000}
         >
           <p className="transition cursor-pointer hover:text-primary">Gallery</p>
         </Link>
-        <Link to="footer" spy={true} smooth={true} offset={-10} duration={700}>
+        <Link to="footer" spy={true} smooth={true} offset={-500} duration={1500}>
           <p className="transition cursor-pointer hover:text-primary">Contact</p>
         </Link>
 
