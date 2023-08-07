@@ -1,7 +1,7 @@
 'use client'
 import { Link } from "react-scroll";
-import { GiHamburgerMenu } from 'react-icons/gi'
 import { useState } from "react";
+import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -38,10 +38,7 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <button className="relative sm:hidden" onClick={() => { setOpen(!open)}
-      }>
-        <GiHamburgerMenu className="text-primary w-8 h-8" />
-      </button>
+      <div className="relative sm:hidden z-50"><MobileMenu /></div>
     </div>
   );
 };

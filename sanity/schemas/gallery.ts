@@ -16,12 +16,15 @@ export default {
     {
       name: "alt",
       type: "string",
-      title: "Alternative Text",
+      title: "Alternate Text",
     },
     {
       name: "image",
       type: "image",
       title: "Image",
+      options: {
+        hotspot: true,
+      },
     },
   ],
 };
