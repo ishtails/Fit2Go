@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar"
+import { urlFor } from "@/helpers/helpers";
 import Footer from "@/pages/Footer";
 import Gallery from "@/pages/Gallery";
 import Hero from "@/pages/Hero";
@@ -8,8 +9,11 @@ import Services from "@/pages/Services";
 import Team from "@/pages/Team";
 import Testimonials from "@/pages/Testimonials";
 import WhyUs from "@/pages/WhyUs";
+import { getPictures } from "@/sanity/utils";
 
 const page = async () => {
+  const pictureArray = await getPictures();
+  
   return (
     <div className="overflow-x-clip">
       {/* Navbar */}
@@ -49,7 +53,7 @@ const page = async () => {
 
       {/* Gallery */}
       <section id="gallery" className="">
-        <Gallery />
+        <Gallery array={pictureArray} />
       </section>
 
       {/* Team */}
