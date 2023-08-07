@@ -3,6 +3,7 @@ import Testimonial from "@/components/Testimonial"
 import { LiaAngleRightSolid, LiaAngleLeftSolid } from "react-icons/lia"
 import React, { useRef } from "react";
 import test_image from "@/assets/Anush.jpeg";
+import NavigationArrows from "@/components/NavigationArrows";
 
 const testimonials = [
     {
@@ -68,22 +69,7 @@ const Testimonials = () => {
                 ))}
             </div>
 
-            <div className="space-x-10 mt-5 md:flex">
-                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
-                    if (testimonialsRef.current) {
-                        testimonialsRef.current.scrollLeft -= 400;
-                    }
-                }} >
-                    <LiaAngleLeftSolid className="transition-all hover:text-primary" />
-                </button>
-                <button className="bg-primary p-2 shadow-md rounded-full hover:bg-white transition-all" onClick={() => {
-                    if (testimonialsRef.current) {
-                        testimonialsRef.current.scrollLeft += 400;
-                    }
-                }} >
-                    <LiaAngleRightSolid className="transition-all hover:text-primary" />
-                </button>
-            </div>
+            <NavigationArrows scrollRef={testimonialsRef} scrollBy={400} />
         </div >
     )
 }
