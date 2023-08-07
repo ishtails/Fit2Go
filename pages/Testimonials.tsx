@@ -2,7 +2,7 @@
 import Testimonial from "@/components/Testimonial"
 import { LiaAngleRightSolid, LiaAngleLeftSolid } from "react-icons/lia"
 import React, { useRef } from "react";
-import test_image from "@/assets/test_image.jpg";
+import test_image from "@/assets/Anush.jpeg";
 
 const testimonials = [
     {
@@ -18,20 +18,6 @@ const testimonials = [
         designation: 'Student',
         description: 'These guys helped me in getting into shape and now I can enjoy playing my favorite game just like when I was young.',
         imageURL: test_image
-    },
-    {
-        author: 'Kartikay',
-        designation: 'Student',
-        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
-        imageURL: test_image,
-        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85b'
-    },
-    {
-        author: 'Kartikay',
-        designation: 'Student',
-        description: "I really loved their service. They are pretty awesome! I can't thank them enough for giving me a new lease on life.",
-        imageURL: test_image,
-        _id: 'ed2316b8-cbb0-4afd-a47f-ce144a87b85b'
     },
     {
         author: 'Kartikay',

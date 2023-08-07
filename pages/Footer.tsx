@@ -2,7 +2,6 @@ import React from 'react'
 import Image from "next/image"
 import logo_2 from "@/assets/logo_2.png"
 import logo from "@/assets/logo.svg"
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Footer = () => {
     return (
@@ -16,7 +15,7 @@ const Footer = () => {
                     <Image src={logo_2} alt="Fit2Go" className="object-cover w-8 p-1 rounded-full bg-primary aspect-square" />
                     <h1 className="text-2xl font-bold text-white">Fit2Go</h1>
                 </div>
-                <p className="text-[#BCBCBC] text-sm mt-2">In case of any queries, reach us at</p>
+                <p className="text-[#BCBCBC] text-sm mt-2">Contact Details</p>
                 <div className="bg-Slate mt-2 text-[#BCBCBC] p-10 flex flex-col border border-zinc-600">
                     <span>
                         <p className="font-bold text-primary">Phone:</p>

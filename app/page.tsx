@@ -22,44 +22,44 @@ const page = async () => {
       </section>
 
       {/* Objective */}
-      <section id="objective">
+      <section id="objective" className="">
         <Objective />
       </section>
 
       {/* Services */}
-      <section id="services">
+      <section id="services" className="">
         <Services />
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials">
+      <section id="testimonials" className="">
         <Testimonials />
       </section>
 
       {/* Performance */}
-      <section id="performance">
+      <section id="performance" className="">
         <Performance />
       </section>
 
       {/* Why Us */}
-      <section id="whyus" className="relative">
+      <section id="whyus" className="relative ">
         <div className="absolute blur-[1000px] bg-[#54BE96]/40 p-96 -z-10 -left-72 -top-56" />
         <WhyUs />
       </section>
 
       {/* Gallery */}
-      <section id="gallery">
+      <section id="gallery" className="">
         <Gallery />
       </section>
 
       {/* Team */}
-      <section id="team" className="relative">
+      <section id="team" className="relative ">
         <div className="absolute blur-[400px] bg-[#54BE96]/30 p-96 -z-10 -right-44 -bottom-56" />
         <Team />
       </section>
 
       {/* Footer */}
-      <section id="footer">
+      <section id="footer" className="">
         <Footer />
       </section>
     </div>
