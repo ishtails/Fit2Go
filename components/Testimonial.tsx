@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import test_quote from "../assets/test_quote.svg"
+import test_quote from "@/assets/test_quote.svg"
 
 type Props = {
     key: string,

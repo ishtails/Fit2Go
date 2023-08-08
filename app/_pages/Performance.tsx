@@ -1,4 +1,4 @@
-import peakperf_image from "../assets/peakperf_image.png";
+import peakperf_image from "@/assets/peakperf_image.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
 

@@ -1,4 +1,4 @@
-import hero_image from "../assets/hero_image.png";
+import hero_image from "@/assets/hero_image.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
 
