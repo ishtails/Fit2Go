@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Fit2Go',
   description: 'A complete fitness app for everyone',
+  themeColor: '#ffffff',
 }
 
 export default function RootLayout({
