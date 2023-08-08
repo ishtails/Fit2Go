@@ -6,6 +6,7 @@ import logo from "@/assets/logo.svg"
 import { MAIL_STRING } from "../constants"
 import NextLink from "next/link"
 import { Link } from "react-scroll"
+import { BiLogoInstagramAlt } from "react-icons/bi"
 
 const Footer = () => {
     return (
@@ -31,12 +32,17 @@ const Footer = () => {
                         <p className="font-bold text-primary">E-mail:</p>
                         <NextLink className="hover:text-white transition-all" href={MAIL_STRING} target="_blank">admin@fit2gosports.com</NextLink>
                     </span>
+
+                    <NextLink href="https://www.instagram.com/fit2gosports/" target="_blank" className="flex items-center space-x-1 mt-4 hover:text-white transition-all">
+                        <BiLogoInstagramAlt className="-ml-1 w-[32px] h-10 text-primary" />
+                        <p className="font-semibold">@fit2gosports</p>
+                    </NextLink>
                 </div>
             </div>
 
-            <Link to="home" offset={-130} spy={true}
-          smooth={true} duration={1200} className="cursor-pointer hidden sm:flex flex-col justify-center">
-                <Image src={logo} alt="logo" className="mb-4"/>
+            <Link to="home" offset={-140} spy={true}
+                smooth={true} duration={1200} className="cursor-pointer hidden sm:flex flex-col justify-center">
+                <Image src={logo} alt="logo" className="mb-4" />
                 <p className="text-sm text-center text-zinc-400">Copyright © <span className="text-primary">Fit2Go 2023</span> </p>
             </Link>
         </div>
