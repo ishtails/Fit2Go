@@ -15,7 +15,7 @@ export async function getTestimonials() {
 
 export async function getPictures() {
   return client.fetch(
-    groq`*[_type == "gallery"]{_id, image, alt}`
+    groq`*[_type == "gallery"]{images}`
   );
 }
 
