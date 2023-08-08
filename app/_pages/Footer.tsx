@@ -1,7 +1,11 @@
+'use client'
 import React from 'react'
 import Image from "next/image"
 import logo_2 from "@/assets/logo_2.png"
 import logo from "@/assets/logo.svg"
+import { MAIL_STRING } from "../constants"
+import NextLink from "next/link"
+import { Link } from "react-scroll"
 
 const Footer = () => {
     return (
@@ -25,15 +29,16 @@ const Footer = () => {
 
                     <span className="mt-4">
                         <p className="font-bold text-primary">E-mail:</p>
-                        <p>shukianush@gmail.com</p>
+                        <NextLink className="hover:text-white transition-all" href={MAIL_STRING} target="_blank">shukianush@gmail.com</NextLink>
                     </span>
                 </div>
             </div>
 
-            <div className="hidden sm:flex flex-col justify-center">
+            <Link to="home" offset={-130} spy={true}
+          smooth={true} duration={1200} className="cursor-pointer hidden sm:flex flex-col justify-center">
                 <Image src={logo} alt="logo" className="mb-4"/>
                 <p className="text-sm text-center text-zinc-400">Copyright © <span className="text-primary">Fit2Go 2023</span> </p>
-            </div>
+            </Link>
         </div>
     )
 }

@@ -1,6 +1,8 @@
 import hero_image from "@/assets/hero_image.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
+import Link from "next/link";
+import { MAIL_STRING } from "../constants";
 
 const Hero = () => {
   return (
@@ -13,16 +15,16 @@ const Hero = () => {
         <p className="text-xl text-body">
           Quality and Holistic Health Services for Everyone
         </p>
-        <button className="flex items-center px-4 py-2 space-x-2 text-white transition-all rounded-full bg-primary hover:bg-[#10a58f]">
+        <Link href={MAIL_STRING} target="_blank" className="flex items-center px-4 py-2 space-x-2 text-white transition-all rounded-full w-fit bg-primary hover:bg-[#10a58f]" aria-label="Get in touch">
           <p className="font-medium">Get in touch</p>
           <AiOutlineArrowRight />
-        </button>
+        </Link>
       </div>
       <Image
         src={hero_image}
         alt="logo"
         title="Hero Image"
-        className="w-[45vh] sm:w-[50%] mt-5 sm:mt-0"
+        className="w-[45vh] sm:w-[45%] mt-5 sm:mt-0"
       />
     </div>
   );

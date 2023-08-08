@@ -28,7 +28,7 @@ const Testimonials = ({ array }: Props) => {
                 </span>
             </div>
 
-            <div ref={testimonialsRef} className="max-w-[95vw] max-h-[75vh] flex overflow-x-scroll space-x-10 scrollbar-hide mb-5 scroll-smooth px-24 snap-x snap-mandatory">
+            <div ref={testimonialsRef} className="max-w-[95vw] max-h-[75vh] flex overflow-x-scroll space-x-10 scrollbar-hide mb-10 scroll-smooth px-24 snap-x snap-mandatory">
                 {array.map((testimonial: any) => (
                     <Testimonial
                         key={testimonial._id}
