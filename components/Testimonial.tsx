@@ -7,7 +7,7 @@ type Props = {
     author: string,
     designation: string,
     description: string,
-    imageURL: string
+    imageURL: any
 }
 
 const Testimonial = ({ author, designation, description, imageURL }: Props) => {

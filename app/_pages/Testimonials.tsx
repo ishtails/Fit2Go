@@ -3,6 +3,7 @@ import Testimonial from "@/components/Testimonial"
 import React, { useRef } from "react";
 import NavigationArrows from "@/components/NavigationArrows";
 import { urlFor } from "@/helpers/helpers";
+import default_avatar from "@/assets/default_avatar.svg";
 
 type Props = {
     array: {
@@ -35,7 +36,7 @@ const Testimonials = ({ array }: Props) => {
                         author={testimonial.author}
                         designation={testimonial.designation}
                         description={testimonial.description}
-                        imageURL={urlFor(testimonial.image).width(500).height(500).url()}
+                        imageURL={testimonial.image ? urlFor(testimonial.image).width(500).height(500).url() : default_avatar}
                     />
                 ))}
             </div>
