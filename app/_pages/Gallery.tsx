@@ -9,13 +9,17 @@ import { urlFor } from "@/helpers/helpers"
 
 type Props = {
   array: {
-    _id: string,
-    alt: string,
-    image: any,
-  }[],
+    images: {
+      asset: {
+        _ref: string,
+        _type: string,
+      }
+      alt: string
+    }[]
+  }[]
 }
 
-const Gallery = ({ array }: Props) => {
+const Gallery = ({ array } : Props) => {
   const [device, setDevice] = useState<deviceType>("iPhone 8");
   const [landscape, setLandscape] = useState(true);
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -58,16 +62,15 @@ const Gallery = ({ array }: Props) => {
 
       <DeviceFrameset device={device} color="black" landscape={landscape} zoom={0.8}>
         <div ref={galleryRef} className="flex flex-col h-[670px] md:h-fit overflow-x-scroll md:flex-row scrollbar-hide scroll-smooth snap-x snap-mandatory">
-          {array.map((item) => (
+          {array[0].images.map((item) => (
             <Image
-              key={item._id}
-              src={urlFor(item.image).width(1000).height(1000).url()}
+              key={item.alt}
+              src={urlFor(item.asset).url()}
               width={600}
               height={600}
               alt={item.alt}
               className="flex-shrink-0 border-8 object-cover border-Slate-darker snap-center" />
           ))}
-
         </div>
       </DeviceFrameset>
 
