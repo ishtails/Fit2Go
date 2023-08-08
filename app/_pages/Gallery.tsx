@@ -65,7 +65,7 @@ const Gallery = ({ array } : Props) => {
           {array[0].images.map((item) => (
             <Image
               key={item.alt}
-              src={urlFor(item.asset).url()}
+              src={urlFor(item.asset).width(600).height(600).url()}
               width={600}
               height={600}
               alt={item.alt}
