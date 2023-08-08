@@ -16,12 +16,12 @@ const Services = () => {
                 A wide range of services that we provide
             </span>
             <div className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 lg:sm:grid-cols-3">
-                <Service title="Physiotherapy & Rehabilitation" description="Buy  your medicines with our mobile application with a simple delivery system" image={services_1} />
-                <Service title="Strength & Conditioning" description="Buy  your medicines with our mobile application with a simple delivery system" image={services_2} />
-                <Service title="Nutrition" description="Free consultation with our trusted doctors and get the best recomendations" image={services_3} />
-                <Service title="Psychology" description="Free consultation with our trusted doctors and get the best recomendations" image={services_4} />
-                <Service title="Medical Team" description="You can get 24/7 urgent care for yourself or your children and your lovely family" image={services_5} />
-                <Service title="24x7 Support" description="You can get 24/7 urgent care for yourself or your children and your lovely family" image={services_6} />
+                <Service title="Physiotherapy & Rehabilitation" description="Reclaim mobility and recover from injuries with personalized physiotherapy and rehabilitation." image={services_1} />
+                <Service title="Strength & Conditioning" description="Unlock your potential through tailored strength and conditioning programs for peak performance." image={services_2} />
+                <Service title="Nutrition" description="Fuel your success with expert nutrition guidance for enhanced energy, recovery, and overall well-being." image={services_3} />
+                <Service title="Psychology" description="Elevate your mental game with psychological support to optimize focus, resilience, and confidence." image={services_4} />
+                <Service title="Medical Team" description="Access a dedicated medical team that understands athletes and is committed to your well-being." image={services_5} />
+                <Service title="24x7 Support" description="Get round-the-clock assistance and guidance whenever you need it, ensuring your journey is fully supported." image={services_6} />
             </div>
         </div>
     )

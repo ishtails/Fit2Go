@@ -24,7 +24,7 @@ const Testimonials = ({ array }: Props) => {
                     Testimonials
                 </h2>
                 <span className="justify-center mt-1 text-sm text-body lg:text-md xl:text-lg">
-                    Swipe to see what our users have to say
+                    What our users have to say
                 </span>
             </div>
 
