@@ -4,7 +4,7 @@ export const client = createClient({
   projectId: "o19642js",
   dataset: "production",
   apiVersion: "2023-08-04",
-  useCdn: true,
+  useCdn: false,
 });
 
 export async function getTestimonials() {
