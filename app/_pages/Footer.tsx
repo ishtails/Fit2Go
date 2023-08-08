@@ -29,7 +29,7 @@ const Footer = () => {
 
                     <span className="mt-4">
                         <p className="font-bold text-primary">E-mail:</p>
-                        <NextLink className="hover:text-white transition-all" href={MAIL_STRING} target="_blank">shukianush@gmail.com</NextLink>
+                        <NextLink className="hover:text-white transition-all" href={MAIL_STRING} target="_blank">admin@fit2gosports.com</NextLink>
                     </span>
                 </div>
             </div>

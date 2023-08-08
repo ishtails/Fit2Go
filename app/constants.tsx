@@ -1,1 +1,1 @@
-export const MAIL_STRING = `https://mail.google.com/mail/?view=cm&fs=1&to=shukianush@gmail.com&su=${encodeURIComponent("Service Required")}`;
+export const MAIL_STRING = `https://mail.google.com/mail/?view=cm&fs=1&to=admin@fit2gosports.com&su=${encodeURIComponent("Service Required")}`;
