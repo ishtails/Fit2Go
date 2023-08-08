@@ -22,7 +22,7 @@ const MobileMenu = () => {
 
     return (
         <div className="">
-            <button className="" onClick={() => {
+            <button aria-label="Menu" onClick={() => {
                 setIsMenuOpen((prevState) => !prevState)
             }}>
                 <GiHamburgerMenu className="text-primary w-8 h-8" />

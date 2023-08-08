@@ -10,14 +10,14 @@ type Props = {
 const NavigationArrows = ({ scrollRef, scrollBy }: Props) => {
     return (
         <div className="self-center space-x-10 flex">
-            <button className="bg-white p-2 shadow-md rounded-full hover:bg-primary transition-all" onClick={() => {
+            <button aria-label="Previous Item" className="bg-white p-2 shadow-md rounded-full hover:bg-primary transition-all" onClick={() => {
                 if (scrollRef.current) {
                     scrollRef.current.scrollLeft -= scrollBy;
                 }
             }} >
                 <LiaAngleLeftSolid className="transition-all  hover:text-white" />
             </button>
-            <button className="bg-white p-2 shadow-md rounded-full hover:bg-primary transition-all" onClick={() => {
+            <button aria-label="Next Item" className="bg-white p-2 shadow-md rounded-full hover:bg-primary transition-all" onClick={() => {
                 if (scrollRef.current) {
                     scrollRef.current.scrollLeft += scrollBy;
                 }
