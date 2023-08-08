@@ -1,10 +1,10 @@
 import Service from "@/components/Service"
-import services_1 from "../assets/services_1.svg"
-import services_2 from "../assets/services_2.svg"
-import services_3 from "../assets/services_3.svg"
-import services_4 from "../assets/services_4.svg"
-import services_5 from "../assets/services_5.svg"
-import services_6 from "../assets/services_6.svg"
+import services_1 from "@/assets/services_1.svg"
+import services_2 from "@/assets/services_2.svg"
+import services_3 from "@/assets/services_3.svg"
+import services_4 from "@/assets/services_4.svg"
+import services_5 from "@/assets/services_5.svg"
+import services_6 from "@/assets/services_6.svg"
 
 const Services = () => {
     return (

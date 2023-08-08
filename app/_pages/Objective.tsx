@@ -1,4 +1,4 @@
-import whatwedo_image from "../assets/whatwedo_image.png";
+import whatwedo_image from "@/assets/whatwedo_image.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
 

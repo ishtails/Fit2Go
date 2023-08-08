@@ -22,6 +22,9 @@ export default {
         name: "image",
         type: "image",
         title: "Author Image",
+        options: {
+          hotspot: true,
+        },
       }
     ],
   };

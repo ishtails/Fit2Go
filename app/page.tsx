@@ -1,15 +1,21 @@
 import NavBar from "@/components/NavBar"
-import Footer from "@/pages/Footer";
-import Gallery from "@/pages/Gallery";
-import Hero from "@/pages/Hero";
-import Objective from "@/pages/Objective";
-import Performance from "@/pages/Performance";
-import Services from "@/pages/Services";
-import Team from "@/pages/Team";
-import Testimonials from "@/pages/Testimonials";
-import WhyUs from "@/pages/WhyUs";
+import { urlFor } from "@/helpers/helpers";
+import Footer from "@/app/_pages/Footer";
+import Gallery from "@/app/_pages/Gallery";
+import Hero from "@/app/_pages/Hero";
+import Objective from "@/app/_pages/Objective";
+import Performance from "@/app/_pages/Performance";
+import Services from "@/app/_pages/Services";
+import Team from "@/app/_pages/Team";
+import Testimonials from "@/app/_pages/Testimonials";
+import WhyUs from "@/app/_pages/WhyUs";
+import { getPictures, getTeamMembers, getTestimonials } from "@/sanity/utils";
 
 const page = async () => {
+  const pictureArray = await getPictures();
+  const testimonials = await getTestimonials();
+  const team = await getTeamMembers();
+  
   return (
     <div className="overflow-x-clip">
       {/* Navbar */}
@@ -33,7 +39,7 @@ const page = async () => {
 
       {/* Testimonials */}
       <section id="testimonials" className="">
-        <Testimonials />
+        <Testimonials array={testimonials}/>
       </section>
 
       {/* Performance */}
@@ -49,13 +55,13 @@ const page = async () => {
 
       {/* Gallery */}
       <section id="gallery" className="">
-        <Gallery />
+        <Gallery array={pictureArray} />
       </section>
 
       {/* Team */}
       <section id="team" className="relative ">
         <div className="absolute blur-[400px] bg-[#54BE96]/30 p-96 -z-10 -right-44 -bottom-56" />
-        <Team />
+        <Team array={team}/>
       </section>
 
       {/* Footer */}
