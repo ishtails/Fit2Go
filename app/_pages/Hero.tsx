@@ -24,6 +24,7 @@ const Hero = () => {
         src={hero_image}
         alt="logo"
         title="Hero Image"
+        priority={true}
         className="w-[45vh] sm:w-[45%] mt-5 sm:mt-0"
       />
     </div>

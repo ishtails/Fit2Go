@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from "next/image"
 import logo_2 from "@/assets/logo_2.png"
-import logo from "@/assets/logo.svg"
+import logo from "@/assets/logo.png"
 import { MAIL_STRING } from "../constants"
 import NextLink from "next/link"
 import { Link } from "react-scroll"
@@ -47,7 +47,7 @@ const Footer = () => {
 
             <Link to="home" offset={-140} spy={true}
                 smooth={true} duration={1200} className="ml-12 flex-col justify-center hidden cursor-pointer md:flex">
-                <Image src={logo} alt="logo" className="mb-4" />
+                <Image src={logo} alt="logo" className="mb-4" width={200} height={200} />
                 <p className="text-sm text-center text-zinc-400">Copyright © <span className="text-primary">Fit2Go! 2023</span> </p>
             </Link>
         </div>
