@@ -8,7 +8,7 @@ const NavBar = () => {
 
   return (
     <div className="z-0 flex items-center justify-between max-w-6xl py-5 mx-10 xl:mx-auto ">
-      <h1 className="text-primary font-bold text-4xl lg:text-5xl">Fit2Go</h1>
+      <h1 className="text-primary font-bold text-4xl lg:text-5xl">Fit2Go!</h1>
 
       <div className="items-center hidden space-x-8 font-medium sm:flex lg:space-x-14 text-slate-600">
         <Link
