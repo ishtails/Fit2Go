@@ -16,7 +16,7 @@ const TeamCard = ({ name, designation, imageURL, linkedin, instagram }: Props) =
         <div className="snap-center w-[100%] max-w-[300px] flex-shrink-0 bg-white flex flex-col items-center rounded-lg">
             <Image className="rounded-t-lg" width={500} height={500} src={imageURL} alt={name} />
             <h3 className="mt-5 text-lg font-bold sm:text-xl">{name}</h3>
-            <p className="mb-4 text-body">{designation}</p>
+            <p className="mb-4 text-body text-center">{designation}</p>
             <div className="flex justify-center -mt-2 mb-3 space-x-4">
                 {instagram && (
                     <Link href={instagram} aria-label="Checkout Instagram" target="_blank">
