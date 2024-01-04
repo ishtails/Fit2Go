@@ -22,6 +22,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta name="google-site-verification" content="VLqino-IwJXyIZvLpcaig_wKRWVk0fKXBUJJ49XdR3M" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
